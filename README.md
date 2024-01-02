@@ -51,4 +51,4 @@ This text-based communication app enables real-time conversations between two us
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the 
