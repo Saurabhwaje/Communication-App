@@ -1,38 +1,24 @@
-# Text-Based Communication App
+# Real-Time Communication Application
 
-This text-based communication app enables real-time conversations between two users, specifically designed for streamlined customer support interactions. Leveraging Twilio's infrastructure, it ensures reliable and secure messaging. Built with a robust NestJS backend and an Angular frontend, the app features a user-friendly interface and efficient performance.
+This text-based communication app enables real-time conversations between two users, specifically designed for streamlined customer support interactions. Leveraging Twilio's infrastructure, it ensures reliable and secure messaging. The app is built with a robust NestJS backend and an Angular frontend, offering a user-friendly interface and efficient performance.
 
-## Key Technologies
+## Key Technologies:
 
-- **Backend:** NestJS, ExpressJS, TypeScript, MySQL, JWT Authentication
-- **Frontend:** Angular
-- **Realtime Communication:** Twilio, Socket.io
+- **Backend:**
+  - NestJS
+  - ExpressJS
+  - TypeScript
+  - MySQL
+  - JWT Authentication
+  - Twilio
+  - Socket.io
 
-## Project Overview
+- **Frontend:**
+  - Angular
+  - ngx-socket-io
+  - Socket.io-client
 
-### Features
-
-- Real-time communication between users.
-- Secure and reliable messaging powered by Twilio.
-- User-friendly interface designed for streamlined customer support interactions.
-
-### Technologies Used
-
-- **Backend Development:**
-  - NestJS framework for building scalable and maintainable server-side applications.
-  - ExpressJS for handling HTTP requests.
-  - TypeScript for enhanced type-checking and tooling support.
-  - MySQL for database interactions.
-  - JWT Authentication for secure user authentication.
-
-- **Frontend Development:**
-  - Angular framework for building dynamic and responsive user interfaces.
-
-- **Realtime Communication:**
-  - Twilio for reliable and secure messaging.
-  - Socket.io for real-time bidirectional event-based communication.
-
-## Project Contributions
+## Backend Features:
 
 - Collaborated with executive leadership to analyze and streamline technology systems.
 - Developed web applications with Angular, including proficiency in Angular components, services, and directives, and experience with Angular routing.
@@ -40,15 +26,39 @@ This text-based communication app enables real-time conversations between two us
 - Designing, developing, and integrating REST APIs using NestJS.
 - Integrated technologies including Socket.io, JWT authentication, and Twilio.
 
-## Getting Started
+## Technologies Used:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Navigate to the backend directory and install dependencies: `cd backend && npm install`
-3. Configure the database and Twilio credentials in the backend configuration files.
-4. Start the NestJS server: `npm run start`
-5. Navigate to the frontend directory and install dependencies: `cd frontend && npm install`
-6. Start the Angular development server: `ng serve`
+### Backend Dependencies:
 
-## License
+- [@hapi/joi](https://www.npmjs.com/package/@hapi/joi): Data validation library.
+- [@nestjs-modules/mailer](https://www.npmjs.com/package/@nestjs-modules/mailer): NestJS module for sending emails.
+- [@nestjs/axios](https://www.npmjs.com/package/@nestjs/axios): Axios module for NestJS.
+- [@nestjs/jwt](https://www.npmjs.com/package/@nestjs/jwt): JWT utilities for NestJS.
+- [@nestjs/passport](https://www.npmjs.com/package/@nestjs/passport): Passport module for NestJS.
+- [@nestjs/platform-socket.io](https://www.npmjs.com/package/@nestjs/platform-socket.io): Socket.io module for NestJS.
+- [auth0](https://www.npmjs.com/package/auth0): Auth0 Node.js SDK.
+- [axios](https://www.npmjs.com/package/axios): Promise-based HTTP client for the browser and Node.js.
+- [bcrypt](https://www.npmjs.com/package/bcrypt): Library for hashing passwords.
+- [blob-util](https://www.npmjs.com/package/blob-util): Utility functions for handling binary data in blobs.
+- [cron](https://www.npmjs.com/package/cron): A simple cron-like job scheduler for Node.js.
+- [dotenv](https://www.npmjs.com/package/dotenv): Loads environment variables from a .env file.
+- [html-to-text](https://www.npmjs.com/package/html-to-text): Converts HTML to plain text.
+- [jwks-rsa](https://www.npmjs.com/package/jwks-rsa): Library to retrieve RSA public keys from a JWKS endpoint.
+- [multer](https://www.npmjs.com/package/multer): Middleware for handling multipart/form-data.
+- [nodemailer](https://www.npmjs.com/package/nodemailer): Module for sending emails.
+- [passport](https://www.npmjs.com/package/passport): Authentication middleware for Node.js.
+- [passport-auth0](https://www.npmjs.com/package/passport-auth0): Auth0 authentication strategy for Passport.
+- [passport-jwt](https://www.npmjs.com/package/passport-jwt): Passport strategy for authenticating with JSON Web Token (JWT).
+- [reflect-metadata](https://www.npmjs.com/package/reflect-metadata): Polyfill for Reflect Metadata API.
+- [request](https://www.npmjs.com/package/request): Simplified HTTP request client.
+- [rimraf](https://www.npmjs.com/package/rimraf): Recursively remove directories.
+- [rxjs](https://www.npmjs.com/package/rxjs): Reactive Extensions for JavaScript.
 
-This project is licensed under the 
+### Frontend Dependencies:
+
+- [@nestjs/mapped-types](https://www.npmjs.com/package/@nestjs/mapped-types): Support for mapped types in NestJS.
+- [axios](https://www.npmjs.com/package/axios): Promise-based HTTP client for the browser and Node.js.
+- [httpclient](https://www.npmjs.com/package/httpclient): HTTP client for Angular applications.
+- [ngx-socket-io](https://www.npmjs.com/package/ngx-socket-io): Socket.io integration for Angular applications.
+- [rxjs](https://www.npmjs.com/package/rxjs): Reactive Extensions for JavaScript.
+- [socket.io-client](https://www.npmjs.com/package/socket.io-client): Socket.io client for browser and Node.js.
