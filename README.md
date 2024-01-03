@@ -9,8 +9,9 @@ This text-based communication app enables real-time conversations between two us
   - ExpressJS
   - TypeScript
   - MySQL
-  - JWT Authentication
   - Twilio
+  - Node.js
+  - JWT Authentication
   - Socket.io
 
 - **Frontend:**
