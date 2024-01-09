@@ -21,10 +21,9 @@ This text-based communication app enables real-time conversations between two us
 
 ## Backend Features:
 
-- Collaborated with executive leadership to analyze and streamline technology systems.
-- Developed web applications with Angular, including proficiency in Angular components, services, and directives, and experience with Angular routing.
-- Hands-on practice with Angular, Express JS, and NodeJS app development, including experience with REST APIs, routing, and authentication.
-- Designing, developing, and integrating REST APIs using NestJS.
+- Developed applications with Angular, Angular components, services, and directives, and Angular routing.
+- With Angular, Express JS, and NodeJS app development, including REST APIs, routing, and authentication.
+- Designed, developed, and integrated REST APIs using NestJS.
 - Integrated technologies including Socket.io, JWT authentication, and Twilio.
 
 ## Technologies Used:
