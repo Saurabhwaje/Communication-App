@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { Emitters } from '../emitters/emitters';
-import { HttpClient } from '@angular/common/http';
-import { SocketService } from '../socket.service';
-import { environment } from '../../environments/environment';
+import { Component, OnInit } from "@angular/core";
+import { Emitters } from "../emitters/emitters";
+import { HttpClient } from "@angular/common/http";
+import { SocketService } from "../socket.service";
+import { environment } from "../../environments/environment";
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: "app-nav",
+  templateUrl: "./nav.component.html",
+  styleUrls: ["./nav.component.css"],
 })
 export class NavComponent implements OnInit {
   authenticated = false;
   userName: any;
 
-  constructor(private http: HttpClient, private socketService: SocketService) {}
+  constructor(
+    private http: HttpClient,
+    private socketService: SocketService
+  ) {}
 
   ngOnInit() {
     Emitters.authEmitter.subscribe((auth: boolean) => {
@@ -35,16 +38,18 @@ export class NavComponent implements OnInit {
   }
 
   private getCurrentUser(): void {
-    this.http.get(environment.baseUrl + '/api/user', { withCredentials: true }).subscribe(
-      (res: any) => {
-        this.userName = res.name;
-        // Uncomment if needed
-        // this.socketService.connect(res.name);
-      },
-      error => {
-        console.log(error);
-      }
-    );
+    this.http
+      .get(environment.baseUrl + "/api/user", { withCredentials: true })
+      .subscribe(
+        (res: any) => {
+          this.userName = res.name;
+          // Uncomment if needed
+          // this.socketService.connect(res.name);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   }
 
   private clearLocalStorage(): void {
@@ -53,16 +58,16 @@ export class NavComponent implements OnInit {
   }
 
   private performLogoutOperations(): void {
-    this.http.post(environment.baseUrl + '/api/logout', {}, { withCredentials: true }).subscribe(() => {
-      this.authenticated = false;
-      this.userName = null;
-    });
+    this.http
+      .post(environment.baseUrl + "/api/logout", {}, { withCredentials: true })
+      .subscribe(() => {
+        this.authenticated = false;
+        this.userName = null;
+      });
   }
 }
 
-
-
-// OLD 
+// OLD
 
 // import { Component, OnInit } from '@angular/core';
 // import { Emitters } from '../emitters/emitters';
@@ -82,7 +87,7 @@ export class NavComponent implements OnInit {
 //   }
 
 //   ngOnInit() {
-    
+
 //     Emitters.authEmitter.subscribe(
 //       (auth: boolean) => {
 //         this.authenticated = auth;
